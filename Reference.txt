@@ -1,0 +1,11 @@
+To Create a task -> xTaskCreatePinnedToCore(Function to be called, "Name of task",Stack size (bytes in ESP32, words in FreeRTOS), Parameter to pass (NULL if nothing),Task priority,Task handle,The Core);
+
+
+Task Syntax:
+
+void TaskName (void *parameters)
+{
+   //Task Program
+}
+
+To Delay a Task ->  vTaskDelay((Amout of ms) / portTICK_PERIOD_MS); OR vTaskDelay(number of ticks to delay);
